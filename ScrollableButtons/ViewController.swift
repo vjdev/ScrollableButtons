@@ -9,11 +9,21 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var scrollableButtonCollection: ScrollableButtonsView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        scrollableButtonCollection.delegate = self
     }
-
-
 }
 
+
+extension ViewController: ScrollableButtonsProtocol {
+    var arrayOfButtonNames: [String] {
+        return ["one","twdsfusbdfjgbsjdfbgsjdbo","three","one","two","three","one","two","three","one","two","three","one","two","three"]
+    }
+    
+    func didSelectButtonAtIndex(_ index: Int){
+        print("Button selected at index", index)
+    }
+}

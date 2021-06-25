@@ -15,6 +15,11 @@
 		979032012685B6A0006FF24F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 979031FF2685B6A0006FF24F /* LaunchScreen.storyboard */; };
 		9790320C2685B6A1006FF24F /* ScrollableButtonsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9790320B2685B6A1006FF24F /* ScrollableButtonsTests.swift */; };
 		979032172685B6A1006FF24F /* ScrollableButtonsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979032162685B6A1006FF24F /* ScrollableButtonsUITests.swift */; };
+		979032312685B720006FF24F /* ScrollableCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9790322F2685B720006FF24F /* ScrollableCollectionViewCell.swift */; };
+		979032322685B720006FF24F /* ScrollableCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 979032302685B720006FF24F /* ScrollableCollectionViewCell.xib */; };
+		979032492685CDFB006FF24F /* ScrollableButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979032482685CDFB006FF24F /* ScrollableButtonsView.swift */; };
+		9790324E2685CE2A006FF24F /* ScrollableButtonsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9790324D2685CE2A006FF24F /* ScrollableButtonsView.xib */; };
+		979032532685D4EF006FF24F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979032522685D4EF006FF24F /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		979032122685B6A1006FF24F /* ScrollableButtonsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrollableButtonsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		979032162685B6A1006FF24F /* ScrollableButtonsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollableButtonsUITests.swift; sourceTree = "<group>"; };
 		979032182685B6A1006FF24F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9790322F2685B720006FF24F /* ScrollableCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollableCollectionViewCell.swift; sourceTree = "<group>"; };
+		979032302685B720006FF24F /* ScrollableCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScrollableCollectionViewCell.xib; sourceTree = "<group>"; };
+		979032482685CDFB006FF24F /* ScrollableButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollableButtonsView.swift; sourceTree = "<group>"; };
+		9790324D2685CE2A006FF24F /* ScrollableButtonsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScrollableButtonsView.xib; sourceTree = "<group>"; };
+		979032522685D4EF006FF24F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +112,11 @@
 				979031F42685B69C006FF24F /* AppDelegate.swift */,
 				979031F62685B69C006FF24F /* SceneDelegate.swift */,
 				979031F82685B69C006FF24F /* ViewController.swift */,
+				979032522685D4EF006FF24F /* Extensions.swift */,
+				979032482685CDFB006FF24F /* ScrollableButtonsView.swift */,
+				9790324D2685CE2A006FF24F /* ScrollableButtonsView.xib */,
+				979032302685B720006FF24F /* ScrollableCollectionViewCell.xib */,
+				9790322F2685B720006FF24F /* ScrollableCollectionViewCell.swift */,
 				979031FA2685B69D006FF24F /* Main.storyboard */,
 				979031FD2685B6A0006FF24F /* Assets.xcassets */,
 				979031FF2685B6A0006FF24F /* LaunchScreen.storyboard */,
@@ -232,7 +247,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				979032012685B6A0006FF24F /* LaunchScreen.storyboard in Resources */,
+				9790324E2685CE2A006FF24F /* ScrollableButtonsView.xib in Resources */,
 				979031FE2685B6A0006FF24F /* Assets.xcassets in Resources */,
+				979032322685B720006FF24F /* ScrollableCollectionViewCell.xib in Resources */,
 				979031FC2685B69D006FF24F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,8 +276,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				979031F92685B69C006FF24F /* ViewController.swift in Sources */,
+				979032532685D4EF006FF24F /* Extensions.swift in Sources */,
+				979032492685CDFB006FF24F /* ScrollableButtonsView.swift in Sources */,
 				979031F52685B69C006FF24F /* AppDelegate.swift in Sources */,
 				979031F72685B69C006FF24F /* SceneDelegate.swift in Sources */,
+				979032312685B720006FF24F /* ScrollableCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ScrollableCollectionViewCell" id="gTV-IL-0wX" customClass="ScrollableCollectionViewCell" customModule="ScrollableButtons" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="126" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="126" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fi6-v1-MDy">
+                        <rect key="frame" x="0.0" y="0.0" width="126" height="50"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ya-th-Ldd">
+                                <rect key="frame" x="10" y="15.5" width="106" height="19"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="19" id="rul-cz-02c"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="scrollableButtonClciked:" destination="gTV-IL-0wX" eventType="touchUpInside" id="hrM-bH-TFd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9Ya-th-Ldd" firstAttribute="centerY" secondItem="fi6-v1-MDy" secondAttribute="centerY" id="Krx-Vo-wxY"/>
+                            <constraint firstItem="9Ya-th-Ldd" firstAttribute="leading" secondItem="fi6-v1-MDy" secondAttribute="leading" constant="10" id="XnF-bZ-8Dm"/>
+                            <constraint firstItem="9Ya-th-Ldd" firstAttribute="centerX" secondItem="fi6-v1-MDy" secondAttribute="centerX" id="ZmZ-Ge-Zp8"/>
+                            <constraint firstAttribute="trailing" secondItem="9Ya-th-Ldd" secondAttribute="trailing" constant="10" id="glb-Sl-2Yh"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="fi6-v1-MDy" secondAttribute="bottom" id="9zH-f7-7Ki"/>
+                <constraint firstAttribute="trailing" secondItem="fi6-v1-MDy" secondAttribute="trailing" id="Ghp-qC-v6V"/>
+                <constraint firstItem="fi6-v1-MDy" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="OmZ-7f-g0Y"/>
+                <constraint firstItem="fi6-v1-MDy" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="jS9-Ij-Zgw"/>
+            </constraints>
+            <size key="customSize" width="126" height="50"/>
+            <connections>
+                <outlet property="buttonContainerView" destination="fi6-v1-MDy" id="Lsd-X9-QiE"/>
+                <outlet property="scrollableButton" destination="9Ya-th-Ldd" id="nbq-cq-9WG"/>
+            </connections>
+            <point key="canvasLocation" x="34.782608695652179" y="122.54464285714285"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
